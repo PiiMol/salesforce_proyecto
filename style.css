@@ -1,0 +1,390 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#00498f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 4px;
+    z-index: 100;
+}
+.logo img {
+    margin-bottom: 5px;
+    max-width: 100px;
+    margin-left: 90px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0; /* Elimina el relleno interno del menú */
+    margin: 0; /* Elimina el margen exterior del menú */
+}
+
+nav li {
+    margin: 0; /* Elimina el margen de los elementos de lista */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px; /* Ajusta el relleno para el tamaño deseado */
+}
+/* Banner */
+#banner {
+    background-image: url('banner.jpg');
+    background-size:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+.banner-content {
+    max-width: 600px; /* Ajusta el ancho máximo según tu diseño */
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 18px;
+}
+
+.banner-content a {
+    display: inline-block;
+    background-color: #003c75;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+/* Destacados */
+#destacados {
+    display: flex;
+    justify-content: space-around;
+    background-color: #003c75;;
+    padding: 40px 0;
+}
+
+.destacado {
+    text-align: center;
+    margin: 20px;
+}
+
+.destacado img {
+    max-width: 100%;
+}
+
+.destacado h2 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.destacado p {
+    font-size: 16px;
+}
+
+/* Contacto */
+#contact {
+    text-align: center;
+    background-color: #0074e4;
+    color: #fff;
+    padding: 40px 0;
+    margin: 0; /* Elimina el margen en la parte inferior */
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+#contact p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/********************************************/
+/* Estilos generales */
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra vertical y horizontalmente */
+    height: 100vh;
+    background: linear-gradient(to top, #003c75, rgba(0, 0, 0, 0.532));
+    background-color: #003c75;
+}
+
+.text {
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Agrega margen interno a la caja de texto */
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+.image img {
+    max-height: 100%;
+}
+
+/* Estilos para los h1 y p */
+h1 {
+    font-size: 24px;
+    margin: 20px 0; /* Aumenta el margen inferior para separar los encabezados h1 */
+}
+
+p {
+    font-size: 16px;
+    text-align: center; /* Centra el texto dentro de los párrafos p */
+    margin: 10px 20px; /* Agrega margen superior e inferior a los párrafos p */
+}
+/* Contacto */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #00498f;
+    color: #333;
+}
+
+/* Estilos para el formulario de Contrátanos */
+#contratanos .centered-text {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Divide el contenido en dos columnas, 2/3 y 1/3 del ancho */
+    align-items: center; /* Alinea verticalmente al centro */
+
+    background-color:  #003c75;
+    min-height: 100vh; /* Establece la altura mínima en el 100% del viewport */
+    justify-items: start; /* Alinea los elementos hacia la izquierda */
+    gap: 40px; /* Aumenta la distancia entre elementos */
+    padding: 40px; /* Agrega espacio adicional alrededor de la sección */
+}
+
+#contratanos .centered-text .form-column {
+   
+    color: #fff;
+    padding: 40px; /* Reduzco el espacio de relleno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    /* max-width: 60%; */
+    margin: 20px;
+}
+
+#contratanos .centered-text .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contratanos .centered-text .col img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#contratanos .centered-text .form-column {
+    width: 80vh; /* Ocupa todo el ancho del contenedor */
+    padding: 20px 30px;
+}
+
+#contratanos input[type="submit"] {
+    background-color: #00498f;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 40px; /* Aumenta el tamaño del botón */
+    border: none;
+    border-radius: 10px; /* Hace que los bordes del botón sean más grandes */
+    cursor: pointer;
+    width: 180px;
+    box-shadow: 10px 5px 5px rgb(0, 1, 72);
+}
+
+#contratanos input[type="text"] {
+   padding: 10px;
+   margin-bottom: 15px;
+   box-shadow: 7px 3px 3px rgb(0, 1, 72);
+}
+
+
+
+/* Formulario de Soporte */
+#soporte {
+    padding: 150px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.centered-form {
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+    padding: 20px;
+}
+
+.centered-form h2 {
+    text-align: center;
+}
+
+.form-input{
+    width: 100%;
+    padding: 15px;
+    margin: 0px;
+    display: block;
+    
+}
+
+.centered-form label,
+.centered-form ,
+.centered-form textarea {
+    display: block;
+    margin-top: 20px;
+   
+}
+
+.centered-form {
+    width: 100%;
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+   
+}
+
+.centered-form input[type="submit"] {
+    background-color: #003c75;;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+/* Contacto styles... */
+.servicio{
+    background-image: url(fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.no-margin {
+    margin-top: 0;
+}
+
+element.style {
+    background-color: #00274e;
+    color: #fff;
+    text-align: center;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+p {
+font-family: Arial, Helvetica, sans-serif;
+margin: 10px 50px;
+text-align: center;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00498f;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
